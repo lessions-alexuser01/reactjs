@@ -1,0 +1,10 @@
+npm install -g nodemon
+
+npm install -g watchify
+
+npm install -g express-generator
+
+npm install -g bower
+
+npm install
+bower install

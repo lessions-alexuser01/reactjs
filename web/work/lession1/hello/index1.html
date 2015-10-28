@@ -1,0 +1,31 @@
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+</body>
+
+<script type="text/jsx">
+  // define a class
+  var Badge = React.createClass({
+    render: function(){
+      return <button className="btn btn-primary" type="button">
+        {this.props.title} <span className="badge">{this.props.number}</span>
+        </button>
+    }
+  });
+
+  var options = {
+    title: 'Press Me',
+    number: 4
+  }
+
+
+  // render the class
+  var element = React.createElement(Badge, options);
+
+  // place it in the body tag
+  React.render(element, document.body);
+
+</script>
